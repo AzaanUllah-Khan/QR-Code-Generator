@@ -167,3 +167,20 @@ body{
 button,i{
     cursor: pointer;
 }
+@media screen and (max-width: 950px) {
+    .area{
+        flex-direction: column;
+        align-items: center;
+    }
+    .area .destinition{
+        width: 95%;
+        order: 1;
+    }
+    .area .left{
+        width: 95%;
+    }
+    .area .right{
+        width: 95%;
+        order: 2;
+    }
+}
