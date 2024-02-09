@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+}
+body{
+    background-color: #f5faff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 10px;
+}
+.area{
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    gap: 15px;
+    margin-top: 20px;
+}
+.container .destinition{
+    width: 200px;
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px 0 rgba(0, 0, 0, 0.09);
+}
+.container .left{
+    width: 450px;
+    background-color: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px 0 rgba(0, 0, 0, 0.09);
+}
+.container .right{
+    width: 250px;
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    box-shadow: 1px 1px 10px 0 rgba(0, 0, 0, 0.09);
+}
+.head-text{
+    text-align: center;
+    font-size: 28px;
+}
+.head-subtext{
+    text-align: center;
+    font-weight: normal;
+    font-size: 16px;
+}
+.sub-subtext{
+    text-align: center;
+    font-size: 19px;
+    margin-bottom: 10px;
+}
+.main-inp{
+    padding: 10px 5px;
+    width: 100%;
+    border-radius: 10px;
+    border: 3px solid #afedc7;
+    outline: none;
+    margin-bottom: 10px;
+}
+.div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+.div button{
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    border-radius: 10px;
+    outline: none;
+    border: 1px solid black;
+}
+.div button:nth-child(1){
+    background-color: rgb(32, 32, 37);
+}
+.div button:nth-child(2){
+    background-color: rgb(247, 247, 247);
+}
+.div button:nth-child(3){
+    background-color: rgb(255, 0, 0);
+}
+.div button:nth-child(4){
+    background-color: rgb(255, 0, 166);
+}
+.div.bg button:nth-child(1){
+    background-color: rgb(70, 70, 210);
+}
+.div.bg button:nth-child(2){
+    background-color: rgb(252, 254, 81);
+}
+.div.bg button:nth-child(3){
+    background-color: rgb(96, 235, 159);
+}
+.div.bg button:nth-child(4){
+    background-color: rgb(237, 71, 21);
+}
+.f{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+.card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.card i{
+    padding: 20px 30px;
+    margin-bottom: 4px;
+    border-radius: 10px;
+    background-color: #f4f9fe;
+}
+.card p{
+    font-size: 13px;
+}
+.right img{
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+.btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 7px;
+    margin-bottom: 15px;
+}
+.btn button{
+    padding: 10px 15px;
+    background-color: #f4f9fe;
+    color: #bbb;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    width: 33%;
+}
+.dnl{
+    padding: 10px 15px;
+    width: 100%;
+    color: #fff;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    background-color: #00c44b;
+}
