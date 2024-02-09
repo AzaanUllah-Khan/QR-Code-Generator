@@ -67,6 +67,7 @@ body{
     border: 3px solid #afedc7;
     outline: none;
     margin-bottom: 10px;
+    transition: all .2s ease-in-out;
 }
 .div{
     display: flex;

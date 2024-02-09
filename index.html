@@ -15,14 +15,14 @@
             <div class="destinition">
                 <h1 class="sub-subtext">Destination</h1>
                 <div class="f">
-                    <div class="card"><i onclick="genQR()" class="fa-solid fa-link"></i><p>Link</p></div>
-                    <div class="card"><i onclick="genQR()" class="fa-solid fa-font"></i><p>Text</p></div>
-                    <div class="card"><i onclick="genQR()" class="fa-solid fa-envelope"></i></i><p>Email</p></div>
-                    <div class="card"><i onclick="genQR()" class="fa-solid fa-phone"></i><p>Call</p></div>
+                    <div class="card" onclick="changeD('Website URL')"><i onclick="genQR()" class="fa-solid fa-link active"></i><p>Link</p></div>
+                    <div class="card" onclick="changeD('Text')"><i onclick="genQR()" class="fa-solid fa-font"></i><p>Text</p></div>
+                    <div class="card" onclick="changeD('Email')"><i onclick="genQR()" class="fa-solid fa-envelope"></i></i><p>Email</p></div>
+                    <div class="card" onclick="changeD('Phone Number')"><i onclick="genQR()" class="fa-solid fa-phone"></i><p>Call</p></div>
                 </div>
             </div>
             <div class="left">
-                <h1 class="sub-subtext">Enter Your Website URL</h1>
+                <h1 class="sub-subtext">Enter Your <span id="destinition">Website URL</span></h1>
                 <input onchange="genQR('png')" type="text" placeholder="https://example.com" class="main-inp" id="input">
                 <h1 style="font-size: 17px; text-align: center; margin-bottom: 10px;">Background Color</h1>
                 <div class="div bg">
@@ -43,7 +43,7 @@
                 <h1 class="sub-subtext">Preview Of QR Code</h1>
                 <img src="https://api.qrserver.com/v1/create-qr-code/?size=130x130&color=0-0-0&bgcolor=255-255-255&data=https://my-portfolio-azaan.netlify.app" alt="qr code" id="img">
                 <div class="btn">
-                    <button onclick="genQR('png')" class="s">PNG</button>
+                    <button onclick="genQR('png')" class="s active">PNG</button>
                     <button onclick="genQR('jpg')" class="s">JPG</button>
                     <button onclick="genQR('svg')" class="s">SVG</button>
                 </div>
