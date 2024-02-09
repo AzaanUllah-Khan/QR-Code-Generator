@@ -15,41 +15,42 @@
             <div class="destinition">
                 <h1 class="sub-subtext">Destination</h1>
                 <div class="f">
-                    <div class="card"><i class="fa-solid fa-link"></i><p>Link</p></div>
-                    <div class="card"><i class="fa-solid fa-font"></i><p>Text</p></div>
-                    <div class="card"><i class="fa-solid fa-envelope"></i></i><p>Email</p></div>
-                    <div class="card"><i class="fa-solid fa-phone"></i><p>Call</p></div>
+                    <div class="card"><i onclick="genQR()" class="fa-solid fa-link"></i><p>Link</p></div>
+                    <div class="card"><i onclick="genQR()" class="fa-solid fa-font"></i><p>Text</p></div>
+                    <div class="card"><i onclick="genQR()" class="fa-solid fa-envelope"></i></i><p>Email</p></div>
+                    <div class="card"><i onclick="genQR()" class="fa-solid fa-phone"></i><p>Call</p></div>
                 </div>
             </div>
             <div class="left">
                 <h1 class="sub-subtext">Enter Your Website URL</h1>
-                <input type="text" placeholder="https://example.com" class="main-inp" id="input">
+                <input onchange="genQR('png')" type="text" placeholder="https://example.com" class="main-inp" id="input">
                 <h1 style="font-size: 17px; text-align: center; margin-bottom: 10px;">Background Color</h1>
                 <div class="div bg">
-                    <button></button>
-                    <button></button>
-                    <button></button>
-                    <button></button>
+                    <button onclick="changeBG('70-70-210')"></button>
+                    <button onclick="changeBG('252-254-81')"></button>
+                    <button onclick="changeBG('96-235-159')"></button>
+                    <button onclick="changeBG('237-71-21')"></button>
                 </div>
                 <h1 style="font-size: 17px; text-align: center; margin-bottom: 10px;">Color</h1>
                 <div class="div">
-                    <button></button>
-                    <button></button>
-                    <button></button>
-                    <button></button>
+                    <button onclick="changeColor('32-32-37')"></button>
+                    <button onclick="changeColor('247-247-247')"></button>
+                    <button onclick="changeColor('255-0-0')"></button>
+                    <button onclick="changeColor('255-0-166')"></button>
                 </div>
             </div>
             <div class="right">
                 <h1 class="sub-subtext">Preview Of QR Code</h1>
-                <img src="https://api.qrserver.com/v1/create-qr-code/?size=130x130&color=0-0-0&bgcolor=255-255-255&data=https://my-portfolio-azaan.netlify.app" alt="qr code">
+                <img src="https://api.qrserver.com/v1/create-qr-code/?size=130x130&color=0-0-0&bgcolor=255-255-255&data=https://my-portfolio-azaan.netlify.app" alt="qr code" id="img">
                 <div class="btn">
-                    <button>PNG</button>
-                    <button>JPG</button>
-                    <button>SVG</button>
+                    <button onclick="genQR('png')" class="s">PNG</button>
+                    <button onclick="genQR('jpg')" class="s">JPG</button>
+                    <button onclick="genQR('svg')" class="s">SVG</button>
                 </div>
                 <button class="dnl">Download QR Code</button>
             </div>
         </div>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
