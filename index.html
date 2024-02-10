@@ -23,13 +23,13 @@
             </div>
             <div class="left">
                 <h1 class="sub-subtext">Enter Your <span id="destinition">Website URL</span></h1>
-                <input onchange="genQR('png')" type="text" placeholder="https://example.com" class="main-inp" id="input">
+                <input onchange="genQR('png')" type="text" placeholder="https://my-portfolio-azaan.netlify.app" class="main-inp" id="input">
                 <h1 style="font-size: 17px; text-align: center; margin-bottom: 10px;">Background Color</h1>
                 <div class="div bg">
                     <button onclick="changeBG('70-70-210')"></button>
                     <button onclick="changeBG('252-254-81')"></button>
                     <button onclick="changeBG('96-235-159')"></button>
-                    <button onclick="changeBG('237-71-21')"></button>
+                    <button onclick="changeBG('255-255-255')"></button>
                 </div>
                 <h1 style="font-size: 17px; text-align: center; margin-bottom: 10px;">Color</h1>
                 <div class="div">
@@ -47,7 +47,7 @@
                     <button onclick="genQR('jpg')" class="s">JPG</button>
                     <button onclick="genQR('svg')" class="s">SVG</button>
                 </div>
-                <button class="dnl"><a href="https://api.qrserver.com/v1/create-qr-code/?size=130x130&color=0-0-0&bgcolor=255-255-255&data=https://my-portfolio-azaan.netlify.app" download="qrcode" style="color: white; text-decoration: none;">Download QR Code</a></button>
+                <button class="dnl"><a id="dnl" href="https://api.qrserver.com/v1/create-qr-code/?size=130x130&color=0-0-0&bgcolor=255-255-255&data=https://my-portfolio-azaan.netlify.app" download="qrcode" style="color: white; text-decoration: none;">Download QR Code</a></button>
             </div>
         </div>
     </div>

@@ -25,35 +25,38 @@ function genQR(format){
         this.classList.add('active');
       });
     });
-
+    
     if(qrdata){
-        document.getElementById("img").src = `https://api.qrserver.com/v1/create-qr-code/?size=130x130&color=${colorS}&format=${formatS}&bgcolor=${bgC}&data=${qrdata}`
+      document.getElementById("img").src = `https://api.qrserver.com/v1/create-qr-code/?size=130x130&color=${colorS}&format=${formatS}&bgcolor=${bgC}&data=${qrdata}`
+      document.getElementById("dnl").href = document.getElementById("img").src
     }
 }
 function changeColor(color){
     if(qrdata){
         colorS = color
         document.getElementById("img").src = `https://api.qrserver.com/v1/create-qr-code/?size=130x130&color=${colorS}&format=${formatS}&bgcolor=${bgC}&data=${qrdata}`
-    }
+        document.getElementById("dnl").href = document.getElementById("img").src
+      }
     else{
         document.getElementById("input").style.backgroundColor = "#ff5f5f2b"
         setTimeout(()=>{
-            document.getElementById("input").style.backgroundColor = "transparent"
+          document.getElementById("input").style.backgroundColor = "transparent"
         },1000)
+      }
     }
-}
-function changeBG(bg){
-    if(qrdata){
+    function changeBG(bg){
+      if(qrdata){
         bgC = bg
         document.getElementById("img").src = `https://api.qrserver.com/v1/create-qr-code/?size=130x130&color=${colorS}&format=${formatS}&bgcolor=${bgC}&data=${qrdata}`
-    }
-    else{
+        document.getElementById("dnl").href = document.getElementById("img").src
+      }
+      else{
         document.getElementById("input").style.backgroundColor = "#ff5f5f2b"
         setTimeout(()=>{
-            document.getElementById("input").style.backgroundColor = "transparent"
+          document.getElementById("input").style.backgroundColor = "transparent"
         },1000)
+      }
     }
-}
 function changeD(what){
     document.getElementById("destinition").innerText = what
-}
+  }
