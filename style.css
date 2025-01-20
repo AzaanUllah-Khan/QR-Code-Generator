@@ -147,7 +147,7 @@ body{
 .btn button{
     padding: 10px 15px;
     background-color: #f4f9fe;
-    color: #707070;
+    color: #222;
     border: none;
     outline: none;
     border-radius: 10px;
@@ -163,8 +163,8 @@ body{
     background-color: #0271ff;
 }
 .active{
-    outline: 2px solid #01d352 !important;
-    background-color: #a5ffc63d !important;
+    outline: 2px solid #0271ff !important;
+    background-color: #0271ff59 !important;
 }
 button,i{
     cursor: pointer;
