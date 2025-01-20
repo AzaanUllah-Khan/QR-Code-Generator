@@ -7,7 +7,7 @@
     font-family: 'Poppins';
 }
 body{
-    background-color: #f5faff;
+    background-color: #cce2ff;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -49,11 +49,13 @@ body{
 .head-text{
     text-align: center;
     font-size: 28px;
+    color: #0271ff;
 }
 .head-subtext{
     text-align: center;
     font-weight: normal;
     font-size: 16px;
+    color: #0271ff;
 }
 .sub-subtext{
     text-align: center;
@@ -64,7 +66,7 @@ body{
     padding: 8px;
     width: 100%;
     border-radius: 10px;
-    border: 3px solid #afedc7;
+    border: 3px solid #0271ff;
     outline: none;
     margin-bottom: 10px;
     transition: all .2s ease-in-out;
@@ -125,7 +127,7 @@ body{
     padding: 20px 30px;
     margin-bottom: 4px;
     border-radius: 10px;
-    background-color: #f4f9fe;
+    background-color: #cce2ff;
 }
 .card p{
     font-size: 13px;
@@ -158,7 +160,7 @@ body{
     border-radius: 10px;
     border: none;
     outline: none;
-    background-color: #00c44b;
+    background-color: #0271ff;
 }
 .active{
     outline: 2px solid #01d352 !important;
