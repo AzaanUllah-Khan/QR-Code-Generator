@@ -2,6 +2,7 @@ var bgC = "255,255,255"
 var colorS = "0,0,0"
 var formatS = "png"
 var qrdata
+
 function genQR(format){
     const buttons = document.querySelectorAll('button.s');
     qrdata = document.getElementById("input").value
