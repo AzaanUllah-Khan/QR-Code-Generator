@@ -47,7 +47,6 @@ function changeColor(color) {
   }
 }
 
-
 function changeBG(bg) {
   if (qrdata) {
     bgC = bg
